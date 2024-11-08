@@ -1,0 +1,62 @@
+.color1{
+    color: #FF9B50 ;
+}
+.color2{
+    color: #f42a14;
+}
+.color3{
+    color:#FFBB5C;
+}
+.bg-burlywood{
+    background-color: burlywood ;
+    color: #0e354b;
+}
+.font-main{
+    font-family: 'Pacifico', cursive;
+}
+.border-color{
+    border: 2px solid #FFBB5C;
+}
+/* start */
+#hero{
+    min-height: 100vh;
+    background-image: linear-gradient(#0e354b99 0% 100%) , url(../img/001609a7a09fc3804c04846728748799.jpg);
+    background-size: cover;
+    background-position: center;
+}
+form button.btn, form button.btn:hover , form button.btn:active , form button.btn:focus{
+    background-color: #f42a14 !important ;
+    border: 2px solid #f42a14 !important;
+    color: #ffffff !important;
+    font-family: 'Pacifico', cursive;
+    padding: 10px;
+    transition: all 0s;
+}
+#hero table.table{
+    --bs-table-bg: #1a415885;
+    border-bottom: 1px solid #FFBB5C ;
+}
+#hero table.table>:not(caption)>*>*{
+    color: #FF9B50;
+}
+#hero table .f-col{
+    width: 10%;
+}
+#hero table tbody td.s-col{
+    width: 40%;
+    text-align: start;
+}
+#hero table .th-col, #hero table .fo-col{
+    width: 25%;
+}
+button.delet ,button.delet:hover ,button.delet:focus{
+    background-color: #082d42;
+    border: 2px solid transparent !important;
+    color: rgb(215, 171, 114);
+}
+button.visit , button.visit:hover ,button.visit:focus{
+    background-color: rgb(215, 171, 114);
+    border: 2px solid transparent !important;
+    color: #082d42;
+}
+/* end */

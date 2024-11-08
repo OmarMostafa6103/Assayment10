@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="img/2e47cab2c2c5b92ca4e7eeab2872d9bc.jpg" rel="icon">
+    <title>BookMark</title>
+</head>
+<body>
+    <div id="hero" class="w-100 m-auto p-3">
+        <div class="container">
+        <h1 class="color2 font-main my-3">Bookmarker.</h1>
+
+        <form action="" class="mt-5">
+            <div class="py-1">
+                <label for="siteNameInput" class="text-capitalize color1 mb-2 " ><i class="fa-solid fa-book-bookmark"></i> Site Name:</label></br>
+                <input oninput="validationName()" type="text" id="siteNameInput" class="form-control bg-transparent border-color text-white ps-4" autocomplete="off">
+                </div>
+        
+                <div class="py-1">
+                <label for="siteURLInput" class="text-capitalize color1 mb-2"><i class="fa-solid fa-link"></i> Site URL:</label></br>
+                <input oninput="validationURL()" type="url" id="siteURLInput" class="form-control bg-transparent border-color text-white ps-4" autocomplete="off">
+                </div>
+        
+                <button onclick="addSite()" class="my-2 btn" type="button" > Submit</button>
+        </form>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal">
+            Launch demo modal
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content bg-burlywood">
+                <div class="modal-header border-0">
+                    <i class="fa-solid fa-triangle-exclamation fa-2xl mt-2 color2"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <h5>Site Name or URL is not valid, Please follow the rules below :</h5>
+                    <p class="mt-3" ><i class="fa-regular fa-circle-right color2"></i> Site name must contain at least 4 characters</p>
+                    <p><i class="fa-regular fa-circle-right color2"></i> Site URL must be a valid one</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <table class="table text-center mt-3 ">
+            <thead>
+                <tr>
+                    <th class="f-col">Index</th>
+                    <th class="text-start">Name</th>
+                    <th class="th-col">Visit</th>
+                    <th class="fo-col">Delete</th>
+                </tr>
+            </thead>
+    
+            <tbody id="tableBody">
+                
+            </tbody>
+    
+        </table>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
